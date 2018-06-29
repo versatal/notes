@@ -1,3 +1,5 @@
-@mixin funkyBorder ($borderSize: 10px) {
-  border: $borderSize solid orange;
+@mixin desktop {
+  @media (min-width: 50rem) {
+    @content;
+  }
 }
